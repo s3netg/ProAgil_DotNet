@@ -1,0 +1,1 @@
+dotnet ef --startup-project ../ProAgil.Api database update

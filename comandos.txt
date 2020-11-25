@@ -1,0 +1,8 @@
+dotnet new sln -n ProAgil 
+dotnet add ProAgil.Repository/ProAgil.Repository.csproj reference ProAgil.Domain/ProAgil.Domain.csproj
+
+dotnet add ProAgil.Api/ProAgil.Api.csproj reference  ProAgil.Domain/ProAgil.Domain.csproj
+dotnet add ProAgil.Api/ProAgil.Api.csproj reference  ProAgil.Repository/ProAgil.Repository.csproj
+
+dotnet sln ProAgil.sln add ProAgil.Api/ProAgil.Api.csproj roAgil.Domain/ProAgil.Domain.csproj ProAgil.Repository/ProAgil.Repository.csproj
+

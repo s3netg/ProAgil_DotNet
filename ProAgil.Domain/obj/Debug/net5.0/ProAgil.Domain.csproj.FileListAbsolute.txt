@@ -1,0 +1,12 @@
+/home/sergio/Documentos/Projeto/ProAgil.Domain/bin/Debug/net5.0/ProAgil.Domain.deps.json
+/home/sergio/Documentos/Projeto/ProAgil.Domain/bin/Debug/net5.0/ProAgil.Domain.dll
+/home/sergio/Documentos/Projeto/ProAgil.Domain/bin/Debug/net5.0/ref/ProAgil.Domain.dll
+/home/sergio/Documentos/Projeto/ProAgil.Domain/bin/Debug/net5.0/ProAgil.Domain.pdb
+/home/sergio/Documentos/Projeto/ProAgil.Domain/obj/Debug/net5.0/ProAgil.Domain.csprojAssemblyReference.cache
+/home/sergio/Documentos/Projeto/ProAgil.Domain/obj/Debug/net5.0/ProAgil.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/sergio/Documentos/Projeto/ProAgil.Domain/obj/Debug/net5.0/ProAgil.Domain.AssemblyInfoInputs.cache
+/home/sergio/Documentos/Projeto/ProAgil.Domain/obj/Debug/net5.0/ProAgil.Domain.AssemblyInfo.cs
+/home/sergio/Documentos/Projeto/ProAgil.Domain/obj/Debug/net5.0/ProAgil.Domain.csproj.CoreCompileInputs.cache
+/home/sergio/Documentos/Projeto/ProAgil.Domain/obj/Debug/net5.0/ProAgil.Domain.dll
+/home/sergio/Documentos/Projeto/ProAgil.Domain/obj/Debug/net5.0/ref/ProAgil.Domain.dll
+/home/sergio/Documentos/Projeto/ProAgil.Domain/obj/Debug/net5.0/ProAgil.Domain.pdb

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,7 +30,9 @@ namespace ProAgil.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ProAgilContext>(x=>x.UseSqlite("Data Source=ProAgil.db"));
+           
             services.AddScoped<IProAgilRepository,ProAgilRepository>();
+            services.AddAutoMapper();
             services.AddControllers();
             services.AddCors();
         }

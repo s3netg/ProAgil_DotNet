@@ -1,0 +1,15 @@
+/home/sergio/Documentos/Projeto/ProAgil.Repository/bin/Debug/net5.0/ProAgil.Repository.deps.json
+/home/sergio/Documentos/Projeto/ProAgil.Repository/bin/Debug/net5.0/ProAgil.Repository.dll
+/home/sergio/Documentos/Projeto/ProAgil.Repository/bin/Debug/net5.0/ref/ProAgil.Repository.dll
+/home/sergio/Documentos/Projeto/ProAgil.Repository/bin/Debug/net5.0/ProAgil.Repository.pdb
+/home/sergio/Documentos/Projeto/ProAgil.Repository/bin/Debug/net5.0/ProAgil.Domain.dll
+/home/sergio/Documentos/Projeto/ProAgil.Repository/bin/Debug/net5.0/ProAgil.Domain.pdb
+/home/sergio/Documentos/Projeto/ProAgil.Repository/obj/Debug/net5.0/ProAgil.Repository.csprojAssemblyReference.cache
+/home/sergio/Documentos/Projeto/ProAgil.Repository/obj/Debug/net5.0/ProAgil.Repository.GeneratedMSBuildEditorConfig.editorconfig
+/home/sergio/Documentos/Projeto/ProAgil.Repository/obj/Debug/net5.0/ProAgil.Repository.AssemblyInfoInputs.cache
+/home/sergio/Documentos/Projeto/ProAgil.Repository/obj/Debug/net5.0/ProAgil.Repository.AssemblyInfo.cs
+/home/sergio/Documentos/Projeto/ProAgil.Repository/obj/Debug/net5.0/ProAgil.Repository.csproj.CoreCompileInputs.cache
+/home/sergio/Documentos/Projeto/ProAgil.Repository/obj/Debug/net5.0/ProAgil.Repository.csproj.CopyComplete
+/home/sergio/Documentos/Projeto/ProAgil.Repository/obj/Debug/net5.0/ProAgil.Repository.dll
+/home/sergio/Documentos/Projeto/ProAgil.Repository/obj/Debug/net5.0/ref/ProAgil.Repository.dll
+/home/sergio/Documentos/Projeto/ProAgil.Repository/obj/Debug/net5.0/ProAgil.Repository.pdb

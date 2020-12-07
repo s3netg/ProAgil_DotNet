@@ -1,3 +1,9 @@
+/home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/ProAgil.Api.csprojAssemblyReference.cache
+/home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/ProAgil.Api.GeneratedMSBuildEditorConfig.editorconfig
+/home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/ProAgil.Api.AssemblyInfoInputs.cache
+/home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/ProAgil.Api.AssemblyInfo.cs
+/home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/ProAgil.Api.csproj.CoreCompileInputs.cache
+/home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/ProAgil.Api.MvcApplicationPartsAssemblyInfo.cache
 /home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/appsettings.Development.json
 /home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/appsettings.json
 /home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/ProAgil.Api
@@ -7,6 +13,8 @@
 /home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/ProAgil.Api.dll
 /home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/ref/ProAgil.Api.dll
 /home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/ProAgil.Api.pdb
+/home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/AutoMapper.dll
+/home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/Microsoft.Bcl.AsyncInterfaces.dll
 /home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/Microsoft.Bcl.HashCode.dll
 /home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/Microsoft.Data.Sqlite.dll
@@ -37,12 +45,6 @@
 /home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/ProAgil.Repository.dll
 /home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/ProAgil.Domain.pdb
 /home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/ProAgil.Repository.pdb
-/home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/ProAgil.Api.csprojAssemblyReference.cache
-/home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/ProAgil.Api.GeneratedMSBuildEditorConfig.editorconfig
-/home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/ProAgil.Api.AssemblyInfoInputs.cache
-/home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/ProAgil.Api.AssemblyInfo.cs
-/home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/ProAgil.Api.csproj.CoreCompileInputs.cache
-/home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/ProAgil.Api.MvcApplicationPartsAssemblyInfo.cache
 /home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/staticwebassets/ProAgil.Api.StaticWebAssets.Manifest.cache
 /home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/staticwebassets/ProAgil.Api.StaticWebAssets.xml
 /home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/scopedcss/bundle/ProAgil.Api.styles.css

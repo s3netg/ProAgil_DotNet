@@ -54,3 +54,12 @@
 /home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/ref/ProAgil.Api.dll
 /home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/ProAgil.Api.pdb
 /home/sergio/Documentos/Projeto/ProAgil.Api/obj/Debug/net5.0/ProAgil.Api.genruntimeconfig.cache
+/home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll
+/home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll
+/home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
+/home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/Newtonsoft.Json.dll
+/home/sergio/Documentos/Projeto/ProAgil.Api/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll

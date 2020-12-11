@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:Projeto}/ProAgil.Api/ProAgil.db",
+            "name": "proagil"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

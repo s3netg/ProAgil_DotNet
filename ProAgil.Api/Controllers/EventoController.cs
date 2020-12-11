@@ -27,7 +27,7 @@ namespace ProAgil.Api.Controllers
         {
              try
             {
-                var eventos = await _repo.GetAllEventosAsync(true);
+                var eventos = await _repo.GetAllEventoAsync(true);
 
                 var results = _mapper.Map<EventoDto[]>(eventos);
 
@@ -61,7 +61,7 @@ namespace ProAgil.Api.Controllers
         {
             try
             {
-                var results = await this._repo.GetAllEventosAsyncByTema(tema, true);
+                var results = await this._repo.GetAllEventoAsyncByTema(tema, true);
                 return Ok(results);
             }
             catch (System.Exception)

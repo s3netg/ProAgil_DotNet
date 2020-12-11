@@ -2,108 +2,112 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ProAgil.Domain;
+using ProAgil.Respository;
 
 namespace ProAgil.Repository
 {
     public class ProAgilRepository : IProAgilRepository
     {
-        public ProAgilContext _context { get; }
-
+        private readonly ProAgilContext _context;
         public ProAgilRepository(ProAgilContext context)
         {
             _context = context;
             _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
-
         }
-        public void Add<T>(T Entity) where T : class
+
+        //GERAIS
+        public void Add<T>(T entity) where T : class
         {
-            _context.Add(Entity);
+            _context.Add(entity);
         }
-
+        public void Update<T>(T entity) where T : class
+        {
+            _context.Update(entity);
+        }
+        public void Delete<T>(T entity) where T : class
+        {
+            _context.Remove(entity);
+        }
         public void DeleteRange<T>(T[] entityArray) where T : class
         {
             _context.RemoveRange(entityArray);
         }
-        public void Update<T>(T Entity) where T : class
-        {
-            _context.Update(Entity);
-        }
-
-        public void Delete<T>(T Entity) where T : class
-        {
-            _context.Remove(Entity);
-        }
-
         public async Task<bool> SaveChangesAsync()
         {
             return (await _context.SaveChangesAsync()) > 0;
         }
 
-        public async Task<Evento[]> GetAllEventosAsync(bool includePalestrantes = false)
+        //EVENTO
+        public async Task<Evento[]> GetAllEventoAsync(bool includePalestrantes = false)
         {
             IQueryable<Evento> query = _context.Eventos
-            .Include(c => c.Lotes)
-            .Include(c => c.RedesSociais);
-            
+                .Include(c => c.Lotes)
+                .Include(c => c.RedesSociais);
+
            
-            query = query.OrderByDescending(c => c.DataEvento);
-           
+            query = query.AsNoTracking()
+                        .OrderBy(c => c.id);
+
             return await query.ToArrayAsync();
         }
-
-        public async Task<Evento[]> GetAllEventosAsyncByTema(string tema, bool includePalestrantes=false)
+        public async Task<Evento[]> GetAllEventoAsyncByTema(string tema, bool includePalestrantes)
         {
-             IQueryable<Evento> query = _context.Eventos
-            .Include(c => c.Lotes)
-            .Include(c => c.RedesSociais);
-           if (includePalestrantes)
-            {
-                query = query.Include(pe => pe.PalestranteEventos)
-                .ThenInclude(p => p.Palestrante);
-            }
-            query = query.OrderByDescending(c => c.DataEvento)
-                .Where(c=>c.Tema.Contains(tema));
+            IQueryable<Evento> query = _context.Eventos
+                .Include(c => c.Lotes)
+                .Include(c => c.RedesSociais);
+
+
+            query = query.AsNoTracking()
+                        .OrderByDescending(c => c.DataEvento)
+                        .Where(c => c.Tema.ToLower().Contains(tema.ToLower()));
 
             return await query.ToArrayAsync();
         }
-
-
         public async Task<Evento> GetEventoAsyncById(int EventoId, bool includePalestrantes)
         {
-             IQueryable<Evento> query = _context.Eventos
-            .Include(c => c.Lotes)
-            .Include(c => c.RedesSociais);
-          
-            query = query.OrderByDescending(c => c.DataEvento)
-                         .Where(c =>c.id == EventoId);
+            IQueryable<Evento> query = _context.Eventos
+                .Include(c => c.Lotes)
+                .Include(c => c.RedesSociais);
+
+           
+            query = query
+                        .AsNoTracking()
+                        .OrderBy(c => c.id)
+                        .Where(c => c.id == EventoId);
+
             return await query.FirstOrDefaultAsync();
         }
 
-        public async Task<Palestrante[]> GetAllPalestrantesAsyncByName(bool includeEventos =false)
+        //PALESTRANTE
+        public async Task<Palestrante> GetPalestranteAsync(int PalestranteId, bool includeEventos = false)
         {
-             IQueryable<Palestrante> query = _context.Palestrantes
-             .Include(c => c.RedesSociais);
-           if (includeEventos)
+            IQueryable<Palestrante> query = _context.Palestrantes
+                .Include(c => c.RedesSociais);
+
+          
+
+            query = query.AsNoTracking()
+                    .OrderBy(p => p.nome)
+                    .Where(p => p.id == PalestranteId);
+
+            return await query.FirstOrDefaultAsync();
+        }
+        public async Task<Palestrante[]> GetAllPalestrantesAsyncByName(string name, bool includeEventos = false)
+        {
+            IQueryable<Palestrante> query = _context.Palestrantes
+                .Include(c => c.RedesSociais);
+
+            if (includeEventos)
             {
-                query = query.Include(pe => pe.PalestranteEventos)
-                .ThenInclude(e =>e.Evento);
+                query = query
+                    .Include(pe => pe.PalestranteEventos)
+                    .ThenInclude(e => e.Evento);
             }
-            query = query.OrderBy(c => c.nome);
+
+            query = query.AsNoTracking()
+                        .Where(p => p.nome.ToLower().Contains(name.ToLower()));
+
             return await query.ToArrayAsync();
         }
-        public async Task<Palestrante> GetPalestrantesAsyncById(int id, bool includeEventos =false)
-        {
-             IQueryable<Palestrante> query = _context.Palestrantes
-             .Include(c => c.RedesSociais);
-           if (includeEventos)
-            {
-                query = query.Include(pe => pe.PalestranteEventos)
-                .ThenInclude(e =>e.Evento);
-            }
-            query = query.OrderBy(c => c.nome)
-                    .Where(c=>c.id== id);
-            return await query.FirstOrDefaultAsync();
-        }
-
     }
 }
